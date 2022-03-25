@@ -4,6 +4,7 @@
 //
 //  Created by Артем Лодыгин on 20.03.2022.
 //
+//a91c843384cd49bf944825b7fd10c604
 
 import UIKit
 
@@ -13,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+//        loadNews(complitionHandler: nil)
         return true
     }
 
