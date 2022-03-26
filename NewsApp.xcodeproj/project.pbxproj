@@ -76,6 +76,7 @@
 				5FB5BFEC27E88640004680B6 /* TableViewController.swift */,
 				5FB5BFD727E799D4004680B6 /* ViewController.swift */,
 				5F4E2CD827EB8D8C00793141 /* PageViewController.swift */,
+				5F4E2CD627EB10F500793141 /* OneNewsViewController.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -85,7 +86,6 @@
 			children = (
 				5FB5BFE827E79BED004680B6 /* Article.swift */,
 				5FB5BFEA27E79CFF004680B6 /* Model.swift */,
-				5F4E2CD627EB10F500793141 /* OneNewsViewController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

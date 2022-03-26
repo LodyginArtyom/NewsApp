@@ -9,6 +9,9 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    @IBOutlet weak var imageNews: UIImageView!
+    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBAction func refreashControllAction(_ sender: Any) {
         loadNews {
             DispatchQueue.main.async {
@@ -55,6 +58,24 @@ class TableViewController: UITableViewController {
          
         cell.textLabel?.text = article.title
         cell.detailTextLabel?.text = article.publishedAt
+        
+        
+        DispatchQueue.main.async {
+            if article.urlToImage != nil{
+                if let url = URL(string: article.urlToImage){
+                    if let data = try? Data(contentsOf: url){
+                        cell.imageView?.image = UIImage(data: data)
+                    }
+                }
+            }
+            
+        }
+        
+//        cell.imageView?.image = article.urlToImage
+//        titleLabel.text = article.title
+//        contentLabel.text = article.description
+        
+        
         
 
         return cell
